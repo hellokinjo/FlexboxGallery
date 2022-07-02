@@ -1,0 +1,27 @@
+* {
+  padding: none;
+  margin: none;
+}
+
+h1 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align:center;
+  color: #999b1f;
+}
+
+#gallery img {
+  width: 25%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  flex-wrap: wrap;
+  padding: 19px;
+  margin: 19px;
+}
+
+@media (min-width 600px) {
+  #gallery {
+    width: 50%;
+  }
+}
