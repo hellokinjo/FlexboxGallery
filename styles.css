@@ -1,27 +1,32 @@
 * {
-  padding: none;
-  margin: none;
+  box-sizing: border-box;
 }
 
 h1 {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-align:center;
   color: #999b1f;
+  padding: 20px 0;
 }
 
+/* Why is the gallery not centered? Why doesn't the border-radius work?*/
 #gallery img {
   width: 25%;
+  height: 300px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   object-fit: cover;
   flex-wrap: wrap;
-  padding: 19px;
-  margin: 19px;
+  padding: 0 14px;
+  margin-top: 8px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 100px;
 }
 
-@media (min-width 600px) {
+@media (min-width: 600px) {
   #gallery {
-    width: 50%;
+    width: 100%;
   }
 }
